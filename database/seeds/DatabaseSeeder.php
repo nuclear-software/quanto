@@ -18,10 +18,10 @@ class DatabaseSeeder extends Seeder
         app()['cache']->forget('spatie.permission.cache');
 
         $sections= [
-            ['display_name' => 'Sections', 'icon' => 'glyphicon glyphicon-link', 'route' => 'sections.index', 'permission'=>'sections_read'],
-            ['display_name' => 'Users', 'icon' => 'glyphicon glyphicon-link', 'route' => 'users.index', 'permission'=>'users_read'],
-            ['display_name' => 'Roles', 'icon' => 'glyphicon glyphicon-link', 'route' => 'roles.index', 'permission'=>'roles_read'],
-            ['display_name' => 'Permissions', 'icon' => 'glyphicon glyphicon-link', 'route' => 'permissions.index', 'permission'=>'permissions_read'],
+            ['display_name' => 'Sections','icon' => 'glyphicon glyphicon-link','route' => 'sections.index','permission' => 'sections_read','created_at' => NULL,'updated_at' => NULL,'deleted_at' => NULL],
+            ['display_name' => 'Users','icon' => 'glyphicon glyphicon-link','route' => 'users.index','permission' => 'users_read','created_at' => NULL,'updated_at' => NULL,'deleted_at' => NULL],
+            ['display_name' => 'Roles','icon' => 'glyphicon glyphicon-link','route' => 'roles.index','permission' => 'roles_read','created_at' => NULL,'updated_at' => NULL,'deleted_at' => NULL],
+            ['display_name' => 'Permissions','icon' => 'glyphicon glyphicon-link','route' => 'permissions.index','permission' => 'permissions_read','created_at' => NULL,'updated_at' => NULL,'deleted_at' => NULL],
             ['display_name' => 'Companies','icon' => 'glyphicon glyphicon-link','route' => 'companies.index','permission' => 'companies_read','created_at' => '2018-12-01 00:58:27','updated_at' => '2018-12-01 00:58:27','deleted_at' => NULL],
             ['display_name' => 'Memberships','icon' => 'glyphicon glyphicon-link','route' => 'memberships.index','permission' => 'memberships_read','created_at' => '2018-12-01 01:12:15','updated_at' => '2018-12-01 01:12:15','deleted_at' => NULL],
             ['display_name' => 'Establishments','icon' => 'glyphicon glyphicon-link','route' => 'establishments.index','permission' => 'establishments_read','created_at' => '2018-12-01 01:27:29','updated_at' => '2018-12-01 01:27:29','deleted_at' => NULL],
