@@ -22,21 +22,23 @@ Route::group(['prefix' => 'v1','middleware' => 'auth:api'], function () {
 
     //Please do not remove this if you want adminlte:route and adminlte:link commands to works correctly.
     #adminlte_api_routes
+
+    Route::apiResource('companies', 'Api\CompanyController');
+
+    Route::apiResource('memberships', 'Api\MembershipController');
+
+    Route::apiResource('establishments', 'Api\EstablishmentController');
+
+    Route::apiResource('establishment_tables', 'Api\EstablishmentTableController');
+
+    Route::apiResource('products', 'Api\ProductController');
+
+    Route::apiResource('accounts', 'Api\AccountController');
+
+    Route::apiResource('account_components', 'Api\AccountComponentController');
+
+    Route::apiResource('product_references', 'Api\ProductReferenceController');
+
 });
 
 
-Route::apiResource('companies', 'Api\CompanyController');
-
-Route::apiResource('memberships', 'Api\MembershipController');
-
-Route::apiResource('establishments', 'Api\EstablishmentController');
-
-Route::apiResource('establishment_tables', 'Api\EstablishmentTableController');
-
-Route::apiResource('products', 'Api\ProductController');
-
-Route::apiResource('accounts', 'Api\AccountController');
-
-Route::apiResource('account_components', 'Api\AccountComponentController');
-
-Route::apiResource('product_references', 'Api\ProductReferenceController');
