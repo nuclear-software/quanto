@@ -1,0 +1,9 @@
+@import "variables_web";
+
+html{
+		body {
+			background-color: $white;
+		}
+	}
+	
+@import "queries";
